@@ -1,6 +1,9 @@
-FROM angelmoratilla/base-ubuntu16
+FROM ubuntu:xenial
 
-MAINTAINER Angel Moratilla <angelmoratilla@gmail.com>
+MAINTAINER Angel Moratilla <amoratilla@biblioeteca.com>
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    TERM=xterm
 
 # Install ride from local deb
     # required to use add-apt-repository
